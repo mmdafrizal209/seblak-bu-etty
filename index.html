@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seblak Bu Etty - Sensasi Pedas Otentik Cianjur</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar Header -->
+    <header class="navbar">
+      <div class="logo">Seblak <span>Bu Etty</span></div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">Beranda</a>
+        <a href="#value">Keunggulan</a>
+        <a href="#menu">Menu</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kontak">Kontak & Lokasi</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- Hero Section (Background Slideshow Otomatis 4 Gambar Assets) -->
+    <section id="hero" class="hero-section">
+      <div class="hero-slideshow">
+        <div
+          class="slide active"
+          style="background-image: url('assets/suku tulang campur 1.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('assets/seblak campur tulang 2.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('assets/seblak ceker campur 3.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('assets/seblak-tulang-cilok.jpg.jpg')"
+        ></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Sensasi Pedas Otentik,<br />Bikin Ketagihan!</h1>
+        <p>
+          Seblak khas Bu Etty dengan rempah pilihan, bumbu kencur asli, dan
+          aneka pilihan toping melimpah.
+        </p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+          <a href="#kontak" class="btn btn-secondary-hero">Hubungi Kami</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="value" class="value-section">
+      <h2 class="section-title">Mengapa Harus Seblak Bu Etty?</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-pepper-hot"></i></div>
+          <h3>Bumbu Kencur Asli</h3>
+          <p>
+            Diolah dengan rempah pilihan tanpa bahan pengawet untuk rasa otentik
+            khas Sunda.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-utensils"></i></div>
+          <h3>Toping Melimpah</h3>
+          <p>
+            Tersedia lebih dari 20 jenis pilihan toping: kerupuk, ceker, bakso,
+            seafood, dan sayur.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-fire"></i></div>
+          <h3>Level Pedas Custom</h3>
+          <p>
+            Bisa sesuaikan tingkat kepedasan favoritmu dari Level 0 (Gurih)
+            hingga Level 5 (Pedas Mampus).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Menu Section -->
+    <section id="menu" class="menu-section">
+      <h2 class="section-title">Menu Favorit</h2>
+      <div class="menu-grid">
+        <!-- Menu 1 -->
+        <div
+          class="menu-card"
+          onclick="openModal('assets/suku tulang campur 1.jpg', 'Seblak Suku Tulang Campur', 'Kombinasi suwiran suku, tulang empuk, kerupuk, mi, dan kuah bumbu kencur gurih pedas.')"
+        >
+          <div class="menu-img-wrapper">
+            <img
+              src="assets/suku tulang campur 1.jpg"
+              alt="Seblak Suku Tulang Campur"
+            />
+          </div>
+          <div class="menu-info">
+            <h3>Seblak Suku Tulang Campur</h3>
+            <p>
+              Kombinasi suwiran suku, tulang empuk, kerupuk, mi, dan kuah bumbu
+              kencur gurih pedas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Menu 2 -->
+        <div
+          class="menu-card"
+          onclick="openModal('assets/seblak campur tulang 2.jpg', 'Seblak Campur Tulang', 'Potongan tulang kaya rempah dipadukan dengan aneka kerupuk dan mi instan khas Bu Etty.')"
+        >
+          <div class="menu-img-wrapper">
+            <img
+              src="assets/seblak campur tulang 2.jpg"
+              alt="Seblak Campur Tulang"
+            />
+          </div>
+          <div class="menu-info">
+            <h3>Seblak Campur Tulang</h3>
+            <p>
+              Potongan tulang kaya rempah dipadukan dengan aneka kerupuk dan mi
+              instan khas Bu Etty.
+            </p>
+          </div>
+        </div>
+
+        <!-- Menu 3 -->
+        <div
+          class="menu-card"
+          onclick="openModal('assets/seblak ceker campur 3.jpg', 'Seblak Ceker Campur', 'Ceker empuk bumbu meresap sempurna disajikan dengan mi, telur, dan kerupuk pilihan.')"
+        >
+          <div class="menu-img-wrapper">
+            <img
+              src="assets/seblak ceker campur 3.jpg"
+              alt="Seblak Ceker Campur"
+            />
+          </div>
+          <div class="menu-info">
+            <h3>Seblak Ceker Campur</h3>
+            <p>
+              Ceker empuk bumbu meresap sempurna disajikan dengan mi, telur, dan
+              kerupuk pilihan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Menu 4 (Menu ekstra) -->
+        <div
+          class="menu-card menu-hidden"
+          id="extraMenu"
+          onclick="openModal('assets/seblak-tulang-cilok.jpg.jpg', 'Seblak Tulang Telor Cilok', 'Paket komplit berisi tulang, telur kocok, cilok kenyal, dan toping kerupuk pedas mantap.')"
+        >
+          <div class="menu-img-wrapper">
+            <img
+              src="assets/seblak-tulang-cilok.jpg.jpg"
+              alt="Seblak Tulang Telor Cilok"
+            />
+          </div>
+          <div class="menu-info">
+            <h3>Seblak Tulang Telor Cilok</h3>
+            <p>
+              Paket komplit berisi tulang, telur kocok, cilok kenyal, dan toping
+              kerupuk pedas mantap.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Lihat Semua Menu -->
+      <div class="menu-toggle-container">
+        <button id="toggleMenuBtn" class="btn btn-toggle">
+          Lihat Semua Menu <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Popup Detail Gambar Utuh -->
+    <div id="imageModal" class="modal">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div class="modal-container">
+        <img id="modalImg" src="" alt="Detail Menu" />
+        <div class="modal-text">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Proof / Testimoni -->
+    <section id="testimoni" class="testi-section">
+      <h2 class="section-title">Kata Mereka</h2>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <p>
+            "Kuah seblaknya kental banget dan rempah kencurnya berasa banget!
+            Level 3-nya pas buat yang suka pedas."
+          </p>
+          <h4>- Rina, Student</h4>
+        </div>
+        <div class="testi-card">
+          <p>
+            "Cekernya empuk gampang dipisahin dari tulang. Bakalan langgangan
+            terus di Seblak Bu Etty!"
+          </p>
+          <h4>- Budi, Foodies</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer & Kontak -->
+    <footer id="kontak" class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Seblak Bu Etty</h3>
+          <p class="rating-info">
+            <i class="fas fa-star"></i> <strong>4.6 / 5.0</strong> (24 Ulasan
+            Google)
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 548P+RMM, Gg. Laksana IV,
+            Cianjur, Jawa Barat
+          </p>
+          <p>
+            <i class="fas fa-clock"></i> Buka Setiap Hari (Tutup pukul 21.00
+            WIB)
+          </p>
+          <p><i class="fas fa-money-bill-wave"></i> Pembayaran: Hanya Tunai</p>
+
+          <a
+            href="https://maps.google.com/?q=Seblak+Ibu+Ety+Gg+Laksana+IV+Cianjur"
+            target="_blank"
+            class="btn btn-maps"
+          >
+            <i class="fas fa-directions"></i> Buka di Google Maps
+          </a>
+        </div>
+
+        <!-- Map Embed Google Maps -->
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.572186714086!2d107.1350!3d-6.8229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7b95f2e624f%3A0x1!2sSeblak%20Ibu%20Ety!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+            width="100%"
+            height="220"
+            style="border: 0; border-radius: 12px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Seblak Bu Etty Cianjur. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
